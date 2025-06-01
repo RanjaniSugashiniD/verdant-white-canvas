@@ -2,6 +2,7 @@
 import { Mail, Phone, MapPin, Linkedin, ExternalLink, Award, Code, Users, Globe } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
 const Index = () => {
   return (
@@ -10,6 +11,12 @@ const Index = () => {
       <header className="bg-white shadow-lg border-b-4 border-portfolio-green-500">
         <div className="max-w-6xl mx-auto px-6 py-8">
           <div className="text-center">
+            <div className="flex justify-center mb-6">
+              <Avatar className="w-32 h-32 ring-4 ring-portfolio-green-500 ring-offset-4">
+                <AvatarImage src="/lovable-uploads/8d978a07-263c-4d6d-b5a4-8c03ace7cf0f.png" alt="Ranjani Sugashini D" />
+                <AvatarFallback className="text-2xl bg-portfolio-green-100 text-portfolio-green-700">RS</AvatarFallback>
+              </Avatar>
+            </div>
             <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4 animate-fade-in">
               RANJANI SUGASHINI D
             </h1>
