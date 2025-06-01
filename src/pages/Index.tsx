@@ -10,36 +10,50 @@ const Index = () => {
       {/* Header Section */}
       <header className="bg-white shadow-lg border-b-4 border-portfolio-green-500">
         <div className="max-w-6xl mx-auto px-6 py-8">
-          <div className="text-center">
-            <div className="flex justify-center mb-6">
-              <Avatar className="w-32 h-32 ring-4 ring-portfolio-green-500 ring-offset-4">
+          <div className="flex flex-col md:flex-row items-center gap-8">
+            {/* Photo Section */}
+            <div className="flex-shrink-0">
+              <Avatar className="w-48 h-48 md:w-56 md:h-56 ring-4 ring-portfolio-green-500 ring-offset-4">
                 <AvatarImage src="/lovable-uploads/8d978a07-263c-4d6d-b5a4-8c03ace7cf0f.png" alt="Ranjani Sugashini D" />
-                <AvatarFallback className="text-2xl bg-portfolio-green-100 text-portfolio-green-700">RS</AvatarFallback>
+                <AvatarFallback className="text-4xl bg-portfolio-green-100 text-portfolio-green-700">RS</AvatarFallback>
               </Avatar>
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4 animate-fade-in">
-              RANJANI SUGASHINI D
-            </h1>
-            <div className="flex flex-wrap justify-center items-center gap-6 text-gray-600">
-              <div className="flex items-center gap-2">
-                <Phone className="w-4 h-4 text-portfolio-green-600" />
-                <span>+91-8148532317</span>
+            
+            {/* Information Section */}
+            <div className="flex-1 text-center md:text-left">
+              <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4 animate-fade-in">
+                RANJANI SUGASHINI D
+              </h1>
+              <div className="mb-6">
+                <h2 className="text-xl md:text-2xl text-portfolio-green-700 font-semibold mb-2">
+                  Electronics & Communication Engineering Student
+                </h2>
+                <p className="text-gray-600 text-lg">
+                  AI Enthusiast | IoT Developer | Tech Innovator
+                </p>
               </div>
-              <div className="flex items-center gap-2">
-                <Mail className="w-4 h-4 text-portfolio-green-600" />
-                <a href="mailto:ranjanisugashini@gmail.com" className="hover:text-portfolio-green-600 transition-colors">
-                  ranjanisugashini@gmail.com
-                </a>
-              </div>
-              <div className="flex items-center gap-2">
-                <Linkedin className="w-4 h-4 text-portfolio-green-600" />
-                <a href="https://www.linkedin.com/in/ranjani-sugashini-d" className="hover:text-portfolio-green-600 transition-colors">
-                  LinkedIn Profile
-                </a>
-              </div>
-              <div className="flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-portfolio-green-600" />
-                <span>Cuddalore</span>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-600">
+                <div className="flex items-center gap-2 justify-center md:justify-start">
+                  <Phone className="w-4 h-4 text-portfolio-green-600" />
+                  <span>+91-8148532317</span>
+                </div>
+                <div className="flex items-center gap-2 justify-center md:justify-start">
+                  <Mail className="w-4 h-4 text-portfolio-green-600" />
+                  <a href="mailto:ranjanisugashini@gmail.com" className="hover:text-portfolio-green-600 transition-colors">
+                    ranjanisugashini@gmail.com
+                  </a>
+                </div>
+                <div className="flex items-center gap-2 justify-center md:justify-start">
+                  <Linkedin className="w-4 h-4 text-portfolio-green-600" />
+                  <a href="https://www.linkedin.com/in/ranjani-sugashini-d" className="hover:text-portfolio-green-600 transition-colors">
+                    LinkedIn Profile
+                  </a>
+                </div>
+                <div className="flex items-center gap-2 justify-center md:justify-start">
+                  <MapPin className="w-4 h-4 text-portfolio-green-600" />
+                  <span>Cuddalore</span>
+                </div>
               </div>
             </div>
           </div>
